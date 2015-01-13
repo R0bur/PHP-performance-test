@@ -42,6 +42,7 @@ $test = new Test ();
 $test->Go (100, 300, 100);
 
 where the first parameter is minimal value of the parameter $v of testing function, the second parameter is maximal value, and the third parameter is step of $v incrementation.
+
 5) Run the testing from command-line:
 
 php test.php
