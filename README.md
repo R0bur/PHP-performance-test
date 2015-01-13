@@ -1,6 +1,6 @@
 # PHP-performance-test
-# Author: Ihar Areshchankau, 2015.
-# Mailto: r0bur@tut.by
+Author: Ihar Areshchankau, 2015.
+Mailto: r0bur@tut.by
 PHP 5.3 class for testing the performance of the PHP language constructions.
 
 How to use:
