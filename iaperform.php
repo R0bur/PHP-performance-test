@@ -188,8 +188,12 @@ class IAPerformanceTest {
 			endif;
 		} while (!$shovene);
 		/* Вычисление относительной погрешности. */
-		$ra = $this->RelatAccur ($nexp, $m, $s, $di, $kst9810);
-		echo "               Constant component: <t> = $m +/- $ra% (sec)\n";
+		if ($m != 0):
+			$ra = $this->RelatAccur ($nexp, $m, $s, $di, $kst9810);
+			echo "               Constant component: <t> = $m +/- $ra% (sec)\n";
+		else:
+			echo "               Constant component: <t> = $m (sec)\n";
+		endif;
 		echo "Phase 2 end.\n";
 		return $m;
 	}
